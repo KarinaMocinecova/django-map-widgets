@@ -1,8 +1,10 @@
 var mapWidgets = mapWidgets || {};
 if (typeof django !== "undefined" && django.jQuery){
-    mapWidgets.jQuery = django.jQuery.noConflict();
+    // mapWidgets.jQuery = django.jQuery.noConflict();
+    mapWidgets.jQuery = django;
 }else{
-    mapWidgets.jQuery = jQuery.noConflict();
+    // mapWidgets.jQuery = jQuery.noConflict();
+    mapWidgets.jQuery = jQuery;
 }
 
 
